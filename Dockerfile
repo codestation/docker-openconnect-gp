@@ -5,6 +5,6 @@ RUN set -ex; \
     apt-get install -y --no-install-recommends openconnect; \
     rm -rf /var/lib/apt/lists/*
 
-COPY openconnect.sh /openconnect.sh
+COPY openconnect.sh vpnc.sh /
 
 CMD ["/openconnect.sh"]

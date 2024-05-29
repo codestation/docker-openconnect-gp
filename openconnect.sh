@@ -22,4 +22,4 @@ if [ -z "${VPN_SERVERCERT}" ]; then
   exit 1
 fi
 
-echo "${VPN_PASSWORD}" | openconnect --protocol=gp --servercert="${VPN_SERVERCERT}" --user="${VPN_USER}" --passwd-on-stdin "${VPN_ADDRESS}"
+echo "${VPN_PASSWORD}" | openconnect --protocol=gp --servercert="${VPN_SERVERCERT}" --user="${VPN_USER}" --passwd-on-stdin --script=/vpnc.sh "${VPN_ADDRESS}"

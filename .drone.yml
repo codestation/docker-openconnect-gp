@@ -11,7 +11,7 @@ steps:
   - name: build
     image: ghcr.io/codestation/drone-kaniko
     settings:
-      repo: registry.megpoid.dev/codestation/openconnect-globalprotect
+      repo: registry.megpoid.dev/codestation/openconnect-gp
       tags: latest
       registry: registry.megpoid.dev
       config:
